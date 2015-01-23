@@ -1,0 +1,9 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1><%= @term.term %></h1>
+    <p><%= @term.description %></p>
+    <%= link_to 'Edit', edit_term_path %>
+    <%= link_to 'Delete', term_path, method: :delete %>
+    <%= link_to 'Back', root_path %>
+  </div>
+</div>

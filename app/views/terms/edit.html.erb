@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1>Edit dictionary term</h1>
+    <div class="form">
+      <%= simple_form_for @term, html: { class: 'form-horizontal' } do |form| %>
+        <%= form.error_notification %>
+        <%= form.input :term, autofocus: true %>
+        <%= form.input :description %>
+        <%= form.button :submit, 'Submit', class: 'submit' %>
+      <% end %>
+    </div>
+    <%= link_to 'Back', root_path %>
+  </div>
+</div>
